@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <link rel="stylesheet" href="Data Tabel.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h3>SAHRUL
+                <br>
+                F55121040
+            </h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="Formulir.html">Formulir</a></li>
+                <li>|</li>
+                <li><a href="data.html">Data tabel</a></li>
+                <li>|</li>
+                <li><a href="login.html">log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+        <h1>Data Petani Di Desa Dolago, Desa Masari, Desa Tolai</h1>
+    </div>
+    <div class="Data">
+    <table border="5" align="center" id="tabel" >
+        <thead>
+            <tr>
+                <th>NAMA</th>
+                <th>ALAMAT</th>
+                <th>UMUR</th>
+                <TH>JENIS KELAMIN</TH>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>sahrul</td>
+            <td>Desa Dolago</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>rivaldi</td>
+            <td>Desa dampelas</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>andika</td>
+            <td>palu barat</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>rahmat</td>
+            <td>Desa poso</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>abib</td>
+            <td>Desa bhonsuia</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>abib</td>
+            <td>Desa boyantogo</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>andika</td>
+            <td>Desa torue</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>Jihad</td>
+            <td>Desa dampelas</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>anta</td>
+            <td>desa larisa</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>ades</td>
+            <td>Desa lagarutu</td>
+            <td>19</td>
+            <td>perempuan</td>
+        </tr>
+        <tr>
+            <td>widya</td>
+            <td>Desa taweli</td>
+            <td>19</td>
+            <td>perempuan</td>
+        </tr>
+        <tr>
+            <td>nadyah</td>
+            <td>Desa bhonsuia</td>
+            <td>19</td>
+            <td>perempuan</td>
+        </tr>
+        <tr>
+            <td>anca</td>
+            <td>Desa Masari</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>ridwan</td>
+            <td>Desa lemusa</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>dewi</td>
+            <td>Desa binangga</td>
+            <td>19</td>
+            <td>perempuan</td>
+        </tr>
+        <tr>
+            <td>jane</td>
+            <td>Desa Dolago</td>
+            <td>19</td>
+            <td>perempuan</td>
+        </tr>
+        <tr>
+            <td>dani</td>
+            <td>Desa pagimana</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>daniel</td>
+            <td>desa celleppa</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>karim</td>
+            <td>Desa boyoga</td>
+            <td>19</td>
+            <td>laki-laki</td>
+        </tr>
+        <tr>
+            <td>yaya</td>
+            <td>Desa gogo</td>
+            <td>19</td>
+            <td>perempuan</td>
+        </tr>
+    </tbody>
+        
+    </table>
+    <script>
+        $(document).ready(function() {
+            $("#tabel").DataTable();
+        });
+    </script>
+    </div>
+</body>
+</html>

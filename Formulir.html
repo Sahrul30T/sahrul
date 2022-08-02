@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="Formulir.css">
+    
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h3>SAHRUL
+                <br>
+                F55121040
+            </h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="Formulir.html">Formulir</a></li>
+                <li>|</li>
+                <li><a href="data.html">Data Table</a></li>
+                <li>|</li>
+                <li><a href="login.html">log out</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="conten">
+            <h1>Formulir pendataan Petani</h1>
+            <form action="index.html">
+                <table border="0" align="center">
+                        <tr>
+                            <td>NIK</td>
+                            <td></td>
+                            <td><input type="number" name="NIK" id ="NIK" </td>
+                        </tr>
+                        <tr>
+                            <td>Nama</td>
+                            <td></td>
+                            <td> <input type="text" name="name" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td>Tempat,tanggal lahir</td>
+                            <td></td>
+                            <td><input type="date" name="TTD" id="lahir" ></td>
+                        </tr>
+                        <tr>
+                            <td>Agama</td>
+                            <td></td>
+                            <td><input type="text" name="Agama" id="kepercayaaan"/></td>
+                        </tr>
+                        <tr>
+                            <td>NO HP</td>
+                            <td></td>
+                            <td><input type="number" name="NO HP" id="phone"></td>
+                        </tr>
+                        <tr>
+                            <td>alamat</td>
+                            <td></td>
+                            <td><input type="text" name="alamat" id="tempat"></td>
+                        </tr>
+                        <tr>
+                            <td>umur</td>
+                            <td></td>
+                            <td><input type="number" name="umur" id="usia"/></td>
+                        </tr>
+                        <tr>
+                            <td>Jumlah penghasilan</td>
+                            <td></td>
+                            <td><input type="number" name="Jumlah penghasilan" id="hasil"/></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis kelamin</td>
+                            <td></td>     
+                            <td><input type="radio" name="Jenis kelamin" id="Jk"/>laki-laki</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><input type="radio" name="Jenis kelamin" id="Jk"/>perempuan</td>
+                        </tr>
+                        <tr>
+                            <td>Status Kawin</td>
+                            <td></td>     
+                            <td><input type="radio" name="Belum kawin" id="muda"/>belum kawin</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td></td>
+                            <td><input type="radio" name="Kawin" id="Tua"/>Kawin</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td></td>
+                            <td>
+                                <button type="button" onclick = "validate()" value="kirim">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+        </div>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            function validate() {
+            
+              var NK = document.getElementById('NIK').value;
+    
+      
+              var nama = document.getElementById('name').value
+
+      
+              var ttl = document.getElementById('lahir').value
+
+      
+              var kepercayaan = document.getElementById('kepercayaaan').value
+
+      
+              var phon = document.getElementById('phone').value
+
+      
+              var temp = document.getElementById('tempat').value
+
+      
+              var sia = document.getElementById('usia').value
+
+
+              var hasill = document.getElementById('hasil').value
+
+
+              var Jkl = document.getElementById('Jk').value
+
+
+              var mudaa = document.getAnimations('muda').value
+
+
+              var Tuaa = document.getAnimations('Tua').value
+
+
+              if (NK == "" || nama == "" || ttl==""|| kepercayaan == ""|| phon ==""|| temp==""|| sia == "" || hasill == "" || Jkl == "" || mudaa == "" || Tuaa == "") {
+                swal({
+                    title: "Mohon Maaf Data Tidak Boleh Kosong",
+                    text: "Silahkan Lengkapi Data Terlebih Dahulu!",
+                    icon: "error",
+                    button: "ok",
+                });
+              } else {
+                    swal({
+                    title: "sukses!",
+                    text: "Selamat Data Anda Telah Di Simpan!",
+                    icon: "success",
+                    button: "oke",
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            swal("data anda telah terinput", {
+                                icon: "success", 
+                            }).then(function(){
+                                window.location.href ="index.html"
+                            })
+                        } else{
+                            swal("");
+                        }
+                    });
+                }
+            }
+          </script>
+</body>
+</html>

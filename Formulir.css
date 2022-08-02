@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  rgb(179, 245, 198);
+}
+ .header{
+    width: inherit;
+    height: 50px;
+    background-color: rgb(179, 245, 198);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(49, 158, 58);
+}
+ .logo{
+    margin-left: 10px;
+}
+ .nav ul{
+    list-style: none;
+    margin-right: 10px;
+}
+ .nav ul li{
+    display: inline;
+}
+ .nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.conten h1{
+    text-align: center;
+    font-size: 30px;
+}
+table{
+    font-size: 30px;
+}
+.ft{
+    font-size: 20px;
+}
